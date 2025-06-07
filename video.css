@@ -1,0 +1,308 @@
+.navbar{
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+
+.toggle-btn{
+    width: 20px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.toggle-btn span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #979797;
+}
+
+.toggle-btn span:nth-child(1){
+    top:0;
+}
+
+.toggle-btn span:nth-child(3){
+    top: 100%;
+}
+
+.logo{
+    height: 30px;
+    margin: -10px 30px 0;
+}
+
+.search-box{
+    position: relative;
+    max-width: 500px;
+    width: 50%;
+    height: 35px;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #dbdbdb;
+}
+
+
+.search-bar{
+    width: 85%;
+    height: 100%;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+    border: none;
+}
+
+.search-btn{
+    width: 15%;
+    height: 100%;
+    background: #f0f0f0;
+    border: none;
+    padding: 5px 0;
+}
+
+.search-btn img{
+    height: 100%;
+}
+
+.user-options{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.user-options .icon{
+    height: 80%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.user-dp{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Container for the entire page layout */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Main Video section */
+
+.video-section{
+    flex: 2;
+    margin-right: 20px;
+}
+
+#video-player{
+    width: 100%;
+    height: 500px;
+}
+
+/* Video details section */
+
+.video-details{
+    margin-top: 10px;
+}
+
+.video-details h1{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.video-details p.views, .video-details p.video-description{
+    color: #606060;
+}
+
+.channel-info-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.channel-details{
+    display: flex;
+    align-items: center;
+}
+
+.channel-logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.channel-name{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.subscribers{
+    color: #aaa;
+    font-size: 14px;
+}
+
+.subscribe-button{
+    color: white;
+    background-color: #8c8989;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+}
+
+.action-button{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 40px;
+    gap: 10px;
+}
+
+.action-button .icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.action-button .more-options{
+    color: black;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-description, .views{
+    margin-top: 10px;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.comments-section{
+    margin: 20px auto;
+}
+
+.comment{
+    display: flex;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.comment img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.comment .comment-content{
+    flex-grow: 1;
+}
+
+.comment .comment-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.comment .comment-header span{
+    margin-right: 5px;
+}
+
+.comment .comment-text{
+    margin-bottom: 5px;
+}
+
+.comment .comment-actions{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.comment-actions button{
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.comment .pinned{
+    font-weight: 600;
+}
+
+.recommendations{
+    flex: 1;
+    margin-top: 15px;
+}
+
+.recommendations h3{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.recommended-video{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.recommended-video img{
+    width: 120px;
+    height: 90px;
+    margin-right: 10px;
+}
+
+.recommended-video h4{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.recommended-video p{
+    font-size: 0.8rem;
+    color: #606060;
+    margin: 5px 0px;
+}
